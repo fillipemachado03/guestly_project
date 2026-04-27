@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.S. Festas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header id="head">
+        <img src="img/balão.png" alt="Balões coloridos">
+        <h1>J.S. Festas</h1>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a href="#text-asid">Sobre a J.S. Festas</a></li>
+            <li><a href="#main">Lista de Convidados</a></li>
+        </ul>
+    </nav>
+    <div id="text-asid">
+        <h2>A J.S. Festas</h2>
+        <p id="marketing">Já pensou em organizar sua festa com a J.S. Festas?</p>
+        <p class="text">
+            A J.S. Festas ajuda a organizar sua festa de forma simples, sem complicação. 
+            A gente cuida da decoração, do espaço, dos fornecedores, da comida e da música, 
+            além de coisas como iluminação, montagem, organização do cronograma e apoio durante 
+            o evento. Você pode escolher o estilo da festa, o tema e o que quer incluir, que a 
+            gente ajusta tudo pra deixar do seu jeito.
+        </p>
+        <p class="text">
+            Pelo site, dá pra organizar a lista de convidados sem dor de cabeça. Você pode
+            adicionar, editar ou remover pessoas e ver quem já confirmou presença. Assim, 
+            fica tudo em um só lugar e bem mais fácil de controlar na hora de planejar a festa.
+        </p>
+        <img src="img/pessoa.png" alt="Criança com vários enfeites de festa">
+    </div>
+    <div id="balao-button">
+        <img src="img/happy_banner.png" alt="Imagem com escrita 'Happy Birthday">
+        <div id="principal">
+            <h3>Cadastre-se para organizar sua lista!</h3>
+            <form id="form-cadastro">
+                <input type="text" name="usuario" placeholder="Digite seu nome" class="caixa" required>
+                <input type="email" name="email" placeholder="Digite seu email" class="caixa" required>
+                <div class="marcar">
+                    <input type="checkbox">
+                    <label>Receber mensagem via SMS</label>
+                </div>
+                <div class="marcar">
+                    <input type="checkbox" id="segundo-checkbox">
+                    <label>Receber mensagem via email</label>
+                </div>
+                <button id="cadastrar" type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <main id="main">
+        <div id="title"></div>
+        <form id="form-convidados">
+            <h3>Adicione um(a) convidado(a) nos campos abaixo:</h3>
+            <div id="form">
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="number" name="age" placeholder="Idade" required>
+            </div>
+            <button type="submit" id="addConvidado">Adicionar</button>
+        </form>
+        <table border="1" cellpadding="10" cellspacing="10">
+            <thead>
+                <tr>
+                    <th>Check</th>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Status</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="lista-convidados"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total de convidados:</td>
+                    <td class="text-table" id="total-convidados"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total de crianças:</td>
+                    <td class="text-table" id="total-criancas"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total de adultos:</td>
+                    <td class="text-table" id="total-adultos"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total de confirmados:</td>
+                    <td class="text-table" id="total-confirmados"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer id="foot">
+        <img src="img/estrela_foot.png" alt="Estrela laranja">
+        <p>J.S. Festas - FM 2026</p>
+    </footer>
+</body>
+</html>
