@@ -13,7 +13,7 @@ body {
     "text-asid balao-button"
     "main main"
     "foot foot";
-    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -262,13 +262,13 @@ div.marcar {
     border: 1px solid black;
     color: white;
     font-weight: bold;
-
+    cursor: pointer;
 }
 
 #main div#title {
     display: block;
     width: 100%;
-    height: 40px;
+    height: auto;
     background-color: black;
     color: white;
     border-top-right-radius: 10px;
@@ -361,4 +361,54 @@ table {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: 0 0 0 10px;
+}
+
+@media screen and (max-width: 625px) {
+    body {
+        grid-template-areas: 
+        "head"
+        "menu"
+        "text-asid"
+        "balao-button"
+        "main"
+        "foot";
+        grid-template-columns: 1fr;
+    }
+    
+    #head {
+        grid-area: head;
+    }
+
+    #menu {
+        grid-area: menu;
+    }
+
+    #menu ul {
+        flex-direction: column;
+    }
+
+    #menu ul li {
+        border-top: 2px solid white;
+        border-right: none;
+    }
+
+    #menu ul li:first-child {
+        border-top: none;
+    }
+
+    #text-asid {
+        grid-area: text-asid;
+    }
+
+    #balao-button {
+        grid-area: balao-button;
+    }
+
+    #main {
+        grid-area: main;
+    }
+
+    #foot {
+        grid-area: foot;
+    }
 }
