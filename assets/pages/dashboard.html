@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestly | Dashboard</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body>
+    <header>
+        <h1>Guestly</h1>
+        <nav>
+            <a href="dashboard.html"><i class="ti ti-calendar-week"></i>Meus Eventos</a>
+            <a href="#">+ Novo Evento</a>
+        </nav>
+        <div class="user-menu">
+            <a href="../../index.html"><i class="ti ti-home"></i></a>
+            <a href="login.html"><i class="ti ti-logout"></i></a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="div-cabecalho">
+                <div>
+                    <h2>Olá, Usuário!</h2>
+                    <p class="p-title">
+                        Gerencie e acompanhe todos os seus eventos em um só lugar.
+                    </p>
+                </div>
+                <a href="#">+ Novo Evento</a>
+            </div>
+            <aside>
+                <input type="search" name="busca" placeholder="Buscar">
+                <select name="categoria">
+                    <option>Categorias</option>
+                    <option value="casamento">Casamento</option>
+                    <option value="corporativo">Corporativo</option>
+                    <option value="aniversario">Aniversário</option>
+                    <option value="gala">Gala e eventos de luxo</option>
+                </select>
+            </aside>
+            <div class="cards-grid">
+                <div class="card-event event-proximo">
+                    <img src="../img/casamento.jpg" alt="foto de casamento">
+                    <div class="div-title">
+                        <span>Casamento Ana & Pedro</span>
+                        <button class="proximo">Próximo</button>
+                    </div>
+                    <p><i class="ti ti-calendar-event"></i>  6 Jun 26</p>
+                    <p><i class="ti ti-map-pin"></i> São Paulo, SP</p>
+                    <p><i class="ti ti-users-group"></i> 150 convidados</p>
+                    <span class="span-type">Casamento</span>
+                </div>
+                <div class="card-event event-proximo">
+                    <img src="../img/corporativo.jpg" alt="foto de evento corporativo">
+                    <div class="div-title">
+                        <span>Evento Corporativo Tech Summit</span>
+                        <button class="proximo">Próximo</button>
+                    </div>
+                    <p><i class="ti ti-calendar-event"></i> 29 Mai 26</p>
+                    <p><i class="ti ti-map-pin"></i> Rio Grande do Sul, RS</p>
+                    <p><i class="ti ti-users-group"></i> 80 convidados</p>
+                    <span class="span-type">Corporativo</span>
+                </div>
+                <div class="card-event event-concluido">
+                    <img src="../img/aniversario.jpg" alt="foto de aniversário">
+                    <div class="div-title">
+                        <span>Aniversário 50 anos Maria</span>
+                        <button class="concluido">Concluído</button>
+                    </div>
+                    <p><i class="ti ti-calendar-event"></i> 10 Mai 26</p>
+                    <p><i class="ti ti-map-pin"></i> Guarulhos, SP</p>
+                    <p><i class="ti ti-users-group"></i> 40 convidados</p>
+                    <span class="span-type">Aniversário</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,219 @@
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    background-color: #0a192f;
+    color: #e0e0e0;
+
+    h1 {
+        font-weight: 300;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            cursor: pointer;
+            transition: color 0.3s;
+            color: #e5e5e5;
+
+            &:hover {
+                color: #fff;
+            }
+
+            i {
+                font-size: 20px;
+                margin-right: 8px;
+                color: #e0e0e0;
+            }
+        }
+    }
+    
+    .user-menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+
+            i {
+                font-size: 30px;
+                color: #e0e0e0;
+                cursor: pointer;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+aside {
+    background-color: #0a192f;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+
+    input, select {
+        border: 1px solid #5c5c5c;
+        border-radius: 12px;
+        padding: 14px;
+        font-size: 15px;
+        outline: none;
+    }
+
+    input {
+        width: 700px;
+    }
+
+    select {
+        width: 300px;
+    }
+}
+
+main {
+    min-height: calc(100vh - 80px);
+    padding: 20px;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+            h2 {
+                font-weight: 300;
+                font-size: 50px;
+                color: #0a192f;
+            }
+
+            .p-title {
+                font-size: 18px;
+                color: #5c5c5c;
+            }
+
+            .div-cabecalho {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    padding: 8px 16px;
+                    background-color: #0a192f;
+                    border-radius: 4px;
+                    font-size: 20px;
+                    color: #e5e5e5;
+                    font-weight: 400;
+                    cursor: pointer;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-color: #e5e5e5;
+                        color: #333;
+                    }
+                }
+            }
+
+            .cards-grid {
+                display: flex;
+                margin-top: 60px;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .event-concluido {
+                    border-bottom: 10px solid darkgreen;
+                }
+
+                .event-proximo {
+                    border-bottom: 10px solid darkgoldenrod;
+                }
+
+                .card-event {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                    width: 100%;
+                    max-width: 400px;
+                    cursor: pointer;
+                    transition: box-shadow 0.1s;
+
+                    
+                    &:hover {
+                        box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 250px;
+                        object-fit: cover;
+                        border-radius: 4px;
+                        margin-bottom: 16px;
+                    }
+
+                    .div-title {
+                        display: flex;
+                        width: 100%;
+                        padding: 20px;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        span {
+                            max-width: 250px;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+
+                        button {
+                            background-color: transparent;
+                            padding: 3px;
+                            border-radius: 10px;
+                            border: 1px solid #333
+                        }
+
+                        .concluido {
+                            border: 1px solid darkgreen;
+                            background-color: darkgreen;
+                            color: #e5e5e5;
+                            font-weight: 600;
+                        }
+
+                        .proximo {
+                            border: 1px solid darkgoldenrod;
+                            background-color: darkgoldenrod;
+                            color: #e5e5e5;
+                            font-weight: 600;
+                        }
+                    }
+
+                    p {
+                        padding: 0 0 2px 20px;
+                    }
+
+                    .span-type {
+                        margin: 20px;
+                    }
+
+                }
+            }
+    }
+
+}
