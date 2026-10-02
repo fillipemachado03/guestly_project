@@ -3,101 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J.S. Festas</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <title>Guestly</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css//index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
-    <header id="head">
-        <img src="img/balão.png" alt="Balões coloridos">
-        <h1>J.S. Festas</h1>
-    </header>
-    <nav id="menu">
-        <ul>
-            <li><a href="#text-asid">Sobre a J.S. Festas</a></li>
-            <li><a href="#main">Lista de Convidados</a></li>
-        </ul>
-    </nav>
-    <div id="text-asid">
-        <h2>A J.S. Festas</h2>
-        <p id="marketing">Já pensou em organizar sua festa com a J.S. Festas?</p>
-        <p class="text">
-            A J.S. Festas ajuda a organizar sua festa de forma simples, sem complicação. 
-            A gente cuida da decoração, do espaço, dos fornecedores, da comida e da música, 
-            além de coisas como iluminação, montagem, organização do cronograma e apoio durante 
-            o evento. Você pode escolher o estilo da festa, o tema e o que quer incluir, que a 
-            gente ajusta tudo pra deixar do seu jeito.
-        </p>
-        <p class="text">
-            Pelo site, dá pra organizar a lista de convidados sem dor de cabeça. Você pode
-            adicionar, editar ou remover pessoas e ver quem já confirmou presença. Assim, 
-            fica tudo em um só lugar e bem mais fácil de controlar na hora de planejar a festa.
-        </p>
-        <img src="img/pessoa.png" alt="Criança com vários enfeites de festa">
-    </div>
-    <div id="balao-button">
-        <img src="img/happy_banner.png" alt="Imagem com escrita 'Happy Birthday">
-        <div id="principal">
-            <h3>Cadastre-se para organizar sua lista!</h3>
-            <form id="form-cadastro">
-                <input type="text" name="usuario" placeholder="Digite seu nome" class="caixa" required>
-                <input type="email" name="email" placeholder="Digite seu email" class="caixa" required>
-                <div class="marcar">
-                    <input type="checkbox">
-                    <label>Receber mensagem via SMS</label>
-                </div>
-                <div class="marcar">
-                    <input type="checkbox" id="segundo-checkbox">
-                    <label>Receber mensagem via email</label>
-                </div>
-                <button id="cadastrar" type="submit">Cadastrar</button>
-            </form>
+    <header>
+        <h1>Guestly</h1>
+        <nav>
+            <a href="#section-inicio">Início</a>
+            <a href="#section-works">Serviços</a>
+            <a href="#section-events">Eventos</a>
+            <a href="#section-contact">Contato</a>
+        </nav>
+        <div>
+            <a href="assets/pages/login.html" id="login-btn">Entrar</a>
+            <a href="assets/pages/register.html" id="register-btn">Cadastrar</a>
         </div>
-    </div>
-    <main id="main">
-        <div id="title"></div>
-        <form id="form-convidados">
-            <h3>Adicione um(a) convidado(a) nos campos abaixo:</h3>
-            <div id="form">
-                <input type="text" name="name" placeholder="Nome" required>
-                <input type="number" name="age" placeholder="Idade" required>
+    </header>
+    <main>
+        <section id="section-inicio">
+            <h2>Eventos que <span>transformam momentos</span></h2>
+            <p>
+                Criamos experiências únicas e memoráveis para cada ocasião especial. 
+                Da concepção à execução, cuidamos de cada detalhe!
+            </p>
+            <div class="row">
+            <a href="assets/pages/register.html">Começar agora</a>
+            <a href="#section-events">Ver eventos</a>
             </div>
-            <button type="submit" id="addConvidado">Adicionar</button>
-        </form>
-        <table border="1" cellpadding="10" cellspacing="10">
-            <thead>
-                <tr>
-                    <th>Check</th>
-                    <th>Nome</th>
-                    <th>Idade</th>
-                    <th>Status</th>
-                    <th>Delete</th>
-                </tr>
-            </thead>
-            <tbody id="lista-convidados"></tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3">Total de convidados:</td>
-                    <td class="text-table" id="total-convidados"></td>
-                </tr>
-                <tr>
-                    <td colspan="3">Total de crianças:</td>
-                    <td class="text-table" id="total-criancas"></td>
-                </tr>
-                <tr>
-                    <td colspan="3">Total de adultos:</td>
-                    <td class="text-table" id="total-adultos"></td>
-                </tr>
-                <tr>
-                    <td colspan="3">Total de confirmados:</td>
-                    <td class="text-table" id="total-confirmados"></td>
-                </tr>
-            </tfoot>
-        </table>
+            <div class="row div-stats">
+                <div>
+                    <span>500+</span>
+                    <p>Eventos realizados</p>
+                </div>
+                <div>
+                    <span>10+</span>
+                    <p>Anos de experiência</p>
+                </div>
+                <div>
+                    <span>98%</span>
+                    <p>Clientes satisfeitos</p>
+                </div>
+            </div>
+        </section>
+        <section id="section-works">
+            <h2 class="title-section">Como trabalhamos</h2>
+            <p class="p-section">
+                Nosso processo é pensado para garantir que seu evento seja inesquecível, 
+                sem estresse e com total tranquilidade.
+            </p>
+            <div class="row div-cards">
+                <div>
+                    <i class="ti ti-sparkles"></i>
+                    <span>Planejamento completo</span>
+                    <p>Cuidamos de cada detalhe do seu evento, do início ao fim.</p>
+                </div>
+                <div>
+                    <i class="ti ti-users-group"></i>
+                    <span>Gestão de fornecedores</span>
+                    <p>Selecionamos e gerenciamos os melhores fornecedores.</p>
+                </div>
+                <div>
+                    <i class="ti ti-calendar-event"></i>
+                    <span>Cronograma detalhado</span>
+                    <p>Organização impecável com timeline personalizado.</p>
+                </div>
+                <div>
+                    <i class="ti ti-circle-check"></i>
+                    <span>Execução perfeita</span>
+                    <p>Coordenação no dia do evento para tudo sair conforme planejado.</p>
+                </div>
+            </div>
+        </section>
+        <section id="section-events">
+            <h2 class="title-section">Tipos de eventos</h2>
+            <p class="p-section">
+                Especializados em criar experiências únicas para diversos tipos de ocasiões especiais.
+            </p>
+            <div class="container">
+                <div class="card">
+                    <img src="assets/img/casamento.jpg" alt="Imagem de um casamento">
+                    <span>Casamentos</span>
+                    <p>Celebrações elegantes e personalizadas para o dia mais especial.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/corporativo.jpg" alt="Imagem de um evento corporativo">
+                    <span>Eventos corporativos</span>
+                    <p>Conferências, seminários e encontros profissionais impactantes.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/aniversario.jpg" alt="Imagem de uma festa de aniversário">
+                    <span>Festas de aniversário</span>
+                    <p>Celebrações especiais para todas as idades com muito carinho.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/gala.jpg" alt="Imagem de um evento de gala">
+                    <span>Galas e eventos de luxo</span>
+                    <p>Experiências exclusivas e sofisticadas para ocasiões extraordinárias.</p>
+                </div>
+            </div>
+        </section>
+        <section id="section-contact">
+            <h2 class="title-section">Entre em contato</h2>
+            <p class="p-section">
+                Vamos conversar sobre o seu evento? Estamos prontos para transformar suas ideias em realidade.
+            </p>
+            <h3>Informações de contato</h3>
+            <div class="div-contacts">
+                <div class="cards-row">
+                    <i class="ti ti-mail"></i>
+                    <div>
+                        <span>Email</span>
+                        <p>contato@guestly.com.br</p>
+                    </div>
+                </div>
+                <div class="cards-row">
+                    <i class="ti ti-phone"></i>
+                    <div>
+                        <span>Telefone</span>
+                        <p>(11) 98765-4321</p>
+                    </div>
+                </div>
+                <div class="cards-row">
+                    <i class="ti ti-map-pin"></i>
+                    <div>
+                        <span>Endereço</span>
+                        <p>Rua Avenida Getúlio Vargas, 1000 - São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            <h4>Horários de atendimento</h4>
+            <div class="div-hours">
+                <p>Segunda a Sexta: 9h às 18h</p>
+                <p>Sábado: 10h às 14h</p>
+                <p>Domingo: Fechado</p>
+            </div>
+        </section>
     </main>
-    <footer id="foot">
-        <img src="img/estrela_foot.png" alt="Estrela laranja">
-        <p>J.S. Festas - FM 2026</p>
+    <footer>
+        <section id="section-footer">
+            <div>
+                <h2 class="title-footer">Guestly</h2>
+                <p class="p-footer">
+                Transformando momentos especiais em experiências inesquecíveis há mais de 10 anos.
+                </p>
+            </div>
+            <div class="div-footer footer-links">
+                <span>Links rápidos</span>
+                <a href="#section-inicio">Início</a>
+                <a href="#section-works">Serviços</a>
+                <a href="#section-events">Eventos</a>
+                <a href="#section-contact">Contato</a>
+            </div>
+            <div class="div-footer footer-social">
+                <span>Siga-nos</span>
+                <div>
+                    <i class="ti ti-brand-instagram"></i>
+                    <i class="ti ti-brand-facebook"></i>
+                    <i class="ti ti-brand-linkedin"></i>
+                </div>
+            </div>
+        </section>
+        <p class="p-copy">&copy; 2026 Guestly. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
