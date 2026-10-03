@@ -6,6 +6,7 @@
     <title>Guestly | Dashboard</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
@@ -13,11 +14,10 @@
         <h1>Guestly</h1>
         <nav>
             <a href="dashboard.html"><i class="ti ti-calendar-week"></i>Meus Eventos</a>
-            <a href="#">+ Novo Evento</a>
+            <a href="#"><i class="ti ti-plus"></i>Novo Evento</a>
         </nav>
         <div class="user-menu">
-            <a href="../../index.html"><i class="ti ti-home"></i></a>
-            <a href="login.html"><i class="ti ti-logout"></i></a>
+            <a href="login.html"><i class="ti ti-logout"></i>Sair</a>
         </div>
     </header>
     <main>
@@ -32,13 +32,25 @@
                 <a href="#">+ Novo Evento</a>
             </div>
             <aside>
-                <input type="search" name="busca" placeholder="Buscar">
+                <div class="busca">
+                    <i class="ti ti-search"></i>
+                    <input type="search" name="busca" placeholder="Buscar">
+                </div>
                 <select name="categoria">
-                    <option>Categorias</option>
+                    <option value="">Todas as categorias</option>
                     <option value="casamento">Casamento</option>
                     <option value="corporativo">Corporativo</option>
                     <option value="aniversario">Aniversário</option>
-                    <option value="gala">Gala e eventos de luxo</option>
+                    <option value="formatura">Formatura</option>
+                    <option value="social">Social</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <select name="status">
+                    <option value="">Todas os status</option>
+                    <option value="proximo">Próximo</option>
+                    <option value="andamento">Em andamento</option>
+                    <option value="concluido">Concluído</option>
+                    <option value="cancelado">Cancelado</option>
                 </select>
             </aside>
             <div class="cards-grid">
