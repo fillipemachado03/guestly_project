@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestly | Novo Evento</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/occurrence.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body>
+    <header>
+        <h1>Guestly</h1>
+        <nav>
+            <a href="dashboard.html"><i class="ti ti-calendar-week"></i>Meus Eventos</a>
+            <a href="#"><i class="ti ti-plus"></i>Novo Evento</a>
+        </nav>
+        <div class="user-menu">
+            <a href="login.html"><i class="ti ti-logout"></i>Sair</a>
+        </div>
+    </header>
+    <main>
+        <div class="cabecalho">
+            <a href=""><i class="ti ti-chevron-left"></i>Voltar</a>
+            <h2>Criar novo evento</h2>
+            <p class="parag-cabecalho">
+                Preencha os detalhes do seu evento.
+            </p>
+        </div>
+        <aside>
+            <form action="">
+                <section class="informations">
+                    <h3>Informações Básicas</h3>
+                    <div class="form-field">
+                        <label for="event-name">Nome do evento *</label>
+                        <input type="text" id="event-name" name="event-name" placeholder="Ex.: Casamento - Ana & Pedro">
+                    </div>
+                    <div class="select-type">
+                        <label for="event-type">Tipo de evento *</label>
+                        <select name="event-type">
+                            <option value="">Selecione o tipo de evento</option>
+                            <option value="casamento">Casamento</option>
+                            <option value="corporativo">Corporativo</option>
+                            <option value="aniversario">Aniversário</option>
+                            <option value="formatura">Formatura</option>
+                            <option value="social">Social</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="hours-day">
+                        <div class="form-data">
+                            <label for="event-data"><i class="ti ti-calendar-week"></i>Data *</label>
+                            <input type="date" id="event-data" name="event-data">
+                        </div>
+                        <div class="form-hour">
+                            <label for="event-time"><i class="ti ti-clock"></i>Hora *</label>
+                            <input type="time" id="event-time" name="event-time">
+                        </div>
+                    </div>
+                </section>
+                <section class="location">
+                    <h3>Localização</h3>
+                    <div class="form-location">
+                        <label for="event-location"><i class="ti ti-map-pin"></i>Local *</label>
+                        <input type="text" id="event-location" name="event-location" placeholder="Ex.: Duque de Caxias">
+                    </div>
+                    <div class="form-adress">
+                        <label for="event-adress">Endereço completo</label>
+                        <input type="text" id="event-adress" name="event-adress" placeholder="Ex.: Av. Getúlio Vargas, 435, Boa Vista, São Paulo, SP">
+                    </div>
+                </section>
+                <section class="details">
+                    <h3>Detalhes do Evento</h3>
+                    <div class="peoples-money">
+                        <div class="form-peoples">
+                            <label for="event-convidados"><i class="ti ti-users"></i>Número de convidados *</label>
+                            <input type="number" id="event-convidados" name="event-convidados" placeholder="Ex.: 150">
+                        </div>
+                        <div class="form-money">
+                            <label for="event-money">Orçamento estimado</label>
+                            <input type="text" id="event-money" name="event-money" placeholder="R$50000">
+                        </div>
+                    </div>
+                    <div class="form-description">
+                        <label for="event-description">Descrição do evento</label>
+                        <textarea name="event-description" id="event-description" placeholder="Descreva detalhes importantes sobre o evento."></textarea>
+                    </div>
+                </section>
+                <div class="buttons">
+                    <button>Cancelar</button>
+                    <button type="submit">Criar evento</button>
+                </div>
+            </form>
+        </aside>
+    </main>
+</body>
+</html>
